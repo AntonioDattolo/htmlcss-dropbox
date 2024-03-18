@@ -12,7 +12,7 @@
 }
 
 .boxed-two{
-    margin: 3.5% 22%;
+    margin: 0 22%;
     
 }
 
@@ -25,6 +25,21 @@
     justify-content: space-between;
     align-items: center;
     
+}
+header > div {
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+    text-align: center;
+    
+}
+header > div > a{
+    font-size: 10px;
+    width: calc((100% / 5 ) - 4%);
+    margin: 0 2%;
+}
+.grow{
+    flex-grow: 2;
 }
 
 /* MAIN (7sezioni)*/
@@ -186,4 +201,75 @@ section.boxed-two > h2{
     
     color: black;
     margin: 3% 4%;
+}
+
+.fascione{
+    margin-top: 0;
+    color: crimson;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+
+}
+
+.fascione > h3, a{
+    font-size: 26px;
+    display: block;
+    
+    white-space: nowrap;
+}
+ /* SETTIMA SEZIONE */
+
+.sec7{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#invisible{
+   display: none;
+}
+ #contenitore:hover #invisible  { 
+    display: block;
+     
+   
+ }
+
+ #contenitore > h5{
+    border-bottom: 1px solid grey;
+    font-size: 26px;
+    margin: 2% 0;
+    padding-bottom: 3%;
+ }
+
+ .sec7 > h3{
+    font-size: 35px;
+    
+ }
+
+/* SEZIONE FOOTER */
+
+.f-back{
+    background-color: black;
+    color: whitesmoke;
+}
+.f-column{
+    width: calc((100% / 5) - 5%);
+    background-color: rgb(230, 246, 8) ;
+    margin: 0 0.5%;
+}
+
+.f-column > h6{
+    font-size: 20px;
+    margin: 2% 0;
+}
+
+.f-column > h4 {
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.boxed-two > hr{
+    display: block;
+    margin: 3% 0;
+    width: 15%;
 }
