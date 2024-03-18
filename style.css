@@ -8,43 +8,58 @@
  
 .boxed-one{
     margin: 0 15%;
-    
     text-align: center;
 }
 
 .boxed-two{
-    margin: 0 22%;
-    
+    margin: 0 22%;    
 }
 
 main{
-    margin-top: 4%;
+    margin-top: 8%;
 }
 
 /* HEADER (position:fixed*/
 
 .flex-container{
     height: 60px;
-    background-color: red;
+    background-color: rgb(210, 208, 208);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    position: fixed;
+    width: 100%;
+    top:0;
+    text-align: center;
+    z-index: 99;
 }
+
 header > div {
     display: flex;
-    justify-content: space-around;
-    width: 15%;
-    text-align: center;
-    
+    justify-content: space-between;
+    width: 50%;
+    height: auto;
+    margin: 0 5%;    
 }
+
 header > div > a{
-    font-size: 10px;
-    width: calc((100% / 5 ) - 4%);
-    margin: 0 2%;
+    font-size: 20px;
+    width: calc((100% / 4 ) + 23px);
+    height: 100%;    
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 17px 0;
 }
-.grow{
-    flex-grow: 2;
+
+header > div > a:hover{
+    border-bottom: 4px solid black;    
+    padding: 17px 0;
+    transition: 0.5s;      
+}
+
+header > div > img{
+    padding: 17px 0;
+    object-fit: contain;
 }
 
 /* MAIN (7sezioni)*/
@@ -56,9 +71,6 @@ header > div > a{
     justify-content: space-between;
     margin-top: 5% ;
     margin-bottom: 5%;
-
-
-
 }
 
 .section-column-one{
@@ -67,14 +79,16 @@ header > div > a{
     width: 450px;
 }
 
+.boxed-one > h1{
+    font-size: 40px;
+}
+
 /* Seconda sezione */
 
 .flex-container-3{
     display: flex;
     justify-content: space-between;
-    background-color: blue;
-    
-    
+         
 }
 
 .sec2-column{
@@ -82,29 +96,23 @@ header > div > a{
     height: 450px;
     width: calc((100% / 3) - 10%);
     margin-top: 2% 5%;
-    
-
 }
 
-.sec2-team{
-    
+.sec2-team{    
     display: flex;
     flex-direction: column;
     border: 1px solid black;
     width: 100%;
     margin: 5% 0;
-    
 }
 
-.sell-office{
-   
+.sell-office{   
     text-align: center;
     border: 1px solid black;
 }
 
 .rel-container{
     padding: 2%;
-    
     border: 1px solid black;
 }
 
@@ -122,6 +130,18 @@ header > div > a{
     line-height: 26.5px;
 }
 
+.boxed-two > h2{
+    font-size: 35px;
+    margin-bottom: 2%;
+}
+
+.boxed-two > i{
+    font-size: 20px;
+    margin: 1%;
+    padding: 0;
+    display: inline-block;
+}
+
 /* TErza sezione */
 
 .sec3-row{
@@ -129,8 +149,7 @@ header > div > a{
     height: 450px;
     width: calc((100% / 2) - 2%);
     margin: 0 1%;
-    padding: 7% 0;
-   
+    padding: 5% 2%;
 }
 
 .sec3-row > h3 {
@@ -160,22 +179,18 @@ header > div > a{
     background-color: rgb(230, 246, 8) ;
     width: calc((100% / 3) - 4%);
     margin: 1% auto;
-    
-
 }
 
 .flex-container-4{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    
-    
     background-color: blue;
-    
 }
 
 section.boxed-two > h2{
     text-align: center;
+    margin: 5%;
 }
 
 /* Quinta sezione (fascione) */
@@ -199,7 +214,6 @@ section.boxed-two > h2{
 
 .se6-column{
     background-color: rgb(230, 246, 8) ;
-    
     width: calc(100% / 3);
 }
 
@@ -208,30 +222,29 @@ section.boxed-two > h2{
     border: 1px dashed black;
     min-width: 317px;
     min-height: 317px;
-    
 }
 
 .row-column{ 
     display: flex;
     flex-wrap: wrap;
-
 }
 
-.se6-column > p{
+.se6-column > p  {
     font-size: 30px;
     margin: 4%;
-
 }
 
 .se6-column > h5{
     font-size: 20px;
     margin: 4%;
 }
-
+.se6-column > img{
+    margin: 3%;
+    padding: 5%;
+}
 .se6-column > hr{
     display: block;
     width: 150px;
-    
     color: black;
     margin: 3% 4%;
 }
@@ -243,13 +256,11 @@ section.boxed-two > h2{
     justify-content: space-between;
     align-items: center;
     height: 250px;
-
 }
 
 .fascione > h3, a{
     font-size: 26px;
     display: block;
-    
     white-space: nowrap;
 }
  /* SETTIMA SEZIONE */
@@ -263,9 +274,7 @@ section.boxed-two > h2{
 }
  #contenitore:hover #invisible  { 
     display: block;
-     
-   
- }
+}
 
  #contenitore > h5{
     border-bottom: 1px solid grey;
@@ -276,23 +285,22 @@ section.boxed-two > h2{
 
  .sec7 > h3{
     font-size: 35px;
-    
- }
+}
 
 /* SEZIONE FOOTER */
 
 .f-back{
     background-color: black;
     color: whitesmoke;
+    min-height:350px;
 }
 .f-column{
     width: calc((100% / 5) - 5%);
-    
     margin: 0 0.5%;
 }
 
 .f-column > h6 > a{
-    font-size: 18px;
+    font-size: 14px;
     margin: 8% 0;
     text-decoration: none;
     color: white;
@@ -308,4 +316,10 @@ section.boxed-two > h2{
     display: block;
     margin: 3% 0;
     width: 15%;
+}
+
+select {
+    background-color: black;
+    color: white;
+    border: none;
 }
