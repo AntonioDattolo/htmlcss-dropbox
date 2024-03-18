@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
  
 .boxed-one{
@@ -14,6 +15,10 @@
 .boxed-two{
     margin: 0 22%;
     
+}
+
+main{
+    margin-top: 4%;
 }
 
 /* HEADER (position:fixed*/
@@ -49,6 +54,8 @@ header > div > a{
     background-color: blue;
     display: flex;
     justify-content: space-between;
+    margin-top: 5% ;
+    margin-bottom: 5%;
 
 
 
@@ -80,14 +87,39 @@ header > div > a{
 }
 
 .sec2-team{
-    background-color: blue;
+    
     display: flex;
     flex-direction: column;
+    border: 1px solid black;
+    width: 100%;
+    margin: 5% 0;
+    
 }
 
 .sell-office{
-    background-color: rgb(230, 246, 8);
+   
     text-align: center;
+    border: 1px solid black;
+}
+
+.rel-container{
+    padding: 2%;
+    
+    border: 1px solid black;
+}
+
+.contact{
+    position: relative;
+    bottom: 25px;
+    left: 80% ;
+    text-decoration: none;
+    font-size: 18px;
+    color:white;
+    background-color: rgb(37, 37, 228);
+    width: 20%;
+    text-align: center;
+    height: 28px;
+    line-height: 26.5px;
 }
 
 /* TErza sezione */
@@ -150,6 +182,7 @@ section.boxed-two > h2{
 
 .sec5{
     margin-top: 3.5%;
+    margin-bottom: 3.5%;
 }
 
 .sec5 > div > h2{
@@ -254,18 +287,21 @@ section.boxed-two > h2{
 }
 .f-column{
     width: calc((100% / 5) - 5%);
-    background-color: rgb(230, 246, 8) ;
+    
     margin: 0 0.5%;
 }
 
-.f-column > h6{
-    font-size: 20px;
-    margin: 2% 0;
+.f-column > h6 > a{
+    font-size: 18px;
+    margin: 8% 0;
+    text-decoration: none;
+    color: white;
 }
 
 .f-column > h4 {
     font-size: 26px;
     font-weight: 900;
+    margin: 8% 0;
 }
 
 .boxed-two > hr{
