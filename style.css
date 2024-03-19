@@ -116,6 +116,13 @@ header > div > img{
     color: white; 
 }
 
+.short{
+    position: relative;
+    top: 35%;
+    color: black;
+    font-size: 50px; 
+}
+
 
 /* Seconda sezione */
 
@@ -281,7 +288,7 @@ header > div > img{
 
 #partner{
     width: 95%;
- }
+}
 .sec3-row-right > h3 {
  font-size: 30px;
 }
@@ -363,25 +370,57 @@ section.boxed-two > h2{
 .se6-column{
     background-color: #f5f5f5;
     width: calc(100% / 3);
+    max-height: 601px ;
+    min-height: 601px;
 }
-
-.hover > img{
+.se6-column > img{
     display: none;
-
 }
-
+/* PULSANTE ATTIVO */
 .c1:active{
-    border: 15px inset red;
-    opacity: 0.5;
-     #first:active{
-        display: inline;
-     }   
+    border: 15px  inset   rgba(255, 255, 255, 0.5) ;  
 }
+.c2:active{
+    border: 15px  inset  rgba(255, 255, 255, 0.5) ;  
+}
+.c3:active{
+    border: 15px  inset    rgba(255, 255, 255, 0.5) ;  
+}
+.c4:active{
+    border: 15px  inset rgba(255, 255, 255, 0.5) ;  
+}
+.c5:active{
+    border: 15px  inset  rgba(255, 255, 255, 0.5) ;  
+    
+}
+.c6:active{
+    border: 15px  inset  rgba(255, 255, 255, 0.5) ;  
+    
+}
+.c7:active{
+    border: 15px  inset  rgba(255, 255, 255, 0.5) ;  
+    
+}
+.c8:active{
+    border: 15px  inset  rgba(255, 255, 255, 0.5) ;  
+    
+}
+/* CAMBIO LOGO ONCLICK */
+
+.no:target{
+    display: block;
+    max-width: 50%;
+    height: 25%;
+}
+.no{
+    display: none;
+}
+
+/* FINE CAMBIO LOGO ONCLICK */
 
 .square{
     width: calc(100% / 2);
-    height: calc(100% / 2);
-    
+    height: calc(100% / 2);   
 }
  /* BACKGROUND SQUARE */
 
@@ -390,30 +429,30 @@ section.boxed-two > h2{
 }
 
 .c2{
-    background-color: #61082b ;
+    background-color: rgb(97, 8, 43) ;
 }
 
 .c3{
-    background-color: #0093ce;
+    background-color: rgb(0, 147, 206);
 }
 
 .c4{
-    background-color: #ff1c1c;
+    background-color: rgb(255, 28, 28);
 }
 
 .c5{
-    background-color: #d5001f;
+    background-color: rgb(213, 0, 31);
 }
 
 .c6{
-    background-color: #b4d0e7;
+    background-color: rgb(180, 208, 231);
 }
 
 .c7{
-    background-color: #0d2481;
+    background-color: rgb(13, 36, 129);
 }
 .c8{
-    background-color:#ffd830 ;
+    background-color:rgb(255, 216, 48) ;
 }
 
 /* END SQUARE BACKGROUND */
@@ -459,11 +498,23 @@ section.boxed-two > h2{
     height: 450px;
 }
 
-.fascione > h3, a{
-    font-size: 26px;
+.fascione > h3{
+    font-size: 45px;
     display: block;
-    white-space: nowrap;
+    padding-top: 3%;    
 }
+
+.fascione > a {
+    white-space: nowrap;
+    text-decoration: none;
+    background-color: whitesmoke;
+    border: 1px solid rgb(46, 46, 46);
+    color: rgb(46, 46, 46);
+    font-size: 20px ;
+    padding: 1.5%;
+    display: inline-block;
+}
+
  /* SETTIMA SEZIONE */
 
 .sec7{
@@ -473,18 +524,27 @@ section.boxed-two > h2{
 #invisible{
    display: none;
 }
- #contenitore:hover #invisible  { 
+#contenitore:hover #invisible  { 
     display: block;
 }
+#rotate{
+    float: right;
+    margin-right: 3%;
+    font-size: 25px;
+}
+#contenitore:hover #rotate{
+    transform: rotate(180deg);
+    display: inline-block;
+}
 
- #contenitore > h5{
+#contenitore > h5{
     border-bottom: 1px solid grey;
-    font-size: 26px;
+    font-size: 18px;
     margin: 2% 0;
     padding-bottom: 3%;
- }
+}
 
- .sec7 > h3{
+.sec7 > h3{
     font-size: 35px;
 }
 
@@ -497,7 +557,7 @@ section.boxed-two > h2{
 }
 .f-column{
     width: calc((100% / 5) - 5%);
-    margin: 6.5% 0.5%;
+    margin: 3.5% 0.5%;
 }
 
 .f-column > h6 > a{
