@@ -14,7 +14,7 @@
 }
 
 .boxed-two{
-    margin: 7% 22%;    
+    margin: 5% 22%;    
 }
 
 main{
@@ -34,6 +34,7 @@ main{
     top:0;
     text-align: center;
     z-index: 99;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 header > div {
@@ -50,19 +51,37 @@ header > div > a{
     height: 100%;    
     text-decoration: none;
     color: rgb(0, 0, 0);
-    padding: 17px 0;
+    padding: 17px  0;
     border-bottom: 4px solid transparent;
+    white-space: nowrap;
 }
 
 header > div > a:hover{
     border-bottom: 4px solid black;    
-    padding: 17px 0;
+    
     transition: 0.5s;      
 }
 
-header > div > img{
-    padding: 17px 0;
+.logo{
+    padding-top: 13px 0;
     object-fit: contain;
+    margin-bottom: 0.9%;
+    margin-right: 4%;
+    
+}
+ .login:hover{
+    border-bottom: 4px solid rgb(255, 255, 255, 0.75); 
+    transition: 0.5s; 
+}
+.login{
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+    background-color: #0061ff;
+    width: 20%;
+    text-align: center;
+    padding: 5px;
+    margin: 8px 0;  
 }
 
 /* MAIN (7sezioni)*/
@@ -103,6 +122,7 @@ header > div > img{
 .section-column-one > p{
     font-size: 21px;
     margin-bottom: 7%;
+    margin-right: 35px ;
 }
 
 .section-column-one > a{
@@ -133,7 +153,7 @@ header > div > img{
 
 .sec2-column{
     
-    min-height: 450px;
+    
     width: calc((100% / 3) - 3%);
     margin: 2% 0;
 }
@@ -156,6 +176,7 @@ header > div > img{
     border: 0.5px solid rgb(122, 121, 121);
     width: 100%;
     margin:0;
+    min-height: 820px;
     
 }
 
@@ -169,6 +190,7 @@ header > div > img{
 
 .card-info{
     padding: 5%;
+    min-height: 325px ;
 }
 
 .card-info > h3  {
@@ -186,7 +208,7 @@ header > div > img{
 
 .card-info > h6  {
     padding: 4% 3%;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: lighter;
 }
 
@@ -194,9 +216,10 @@ header > div > img{
     margin: 5% 7%;
     background-color: #0061ff;
     border: none;
-    padding: 7px 20%;
+    padding: 7px 17%;
     white-space: nowrap;
-    color: white;  
+    color: white; 
+    
 }
 .card-info > p > a {
     text-decoration: none;
@@ -213,6 +236,7 @@ header > div > img{
 .fa-check{
     color: #0061ff;
     padding-right: 4px;
+    
 }
 
 
@@ -250,6 +274,7 @@ header > div > img{
     text-align: center;
     height: 28px;
     line-height: 26.5px;
+    padding: 5px;
 }
 
 .rel-container > h5{
@@ -261,11 +286,8 @@ header > div > img{
     font-size: 15px;
 }
 
-
-
-
-
 /* TErza sezione */
+
 .flex-container-thirdsection{    
     display: flex;
     justify-content: space-between;
@@ -280,11 +302,7 @@ header > div > img{
     padding: 7% 0 ;
     
 }
-.sec3-row-left{
-    
-   
 
-}
 
 #partner{
     width: 95%;
@@ -294,7 +312,7 @@ header > div > img{
 }
 
 .sec3-row-right > p{
-    font-size: 18px;
+    font-size: 17.3px;
     margin: 5% 0;
     display: inline-block;
 }
@@ -558,6 +576,11 @@ section.boxed-two > h2{
 .f-column{
     width: calc((100% / 5) - 5%);
     margin: 3.5% 0.5%;
+}
+
+.f-column > h6{
+    margin: 8% 0;
+
 }
 
 .f-column > h6 > a{
