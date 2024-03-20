@@ -81,9 +81,10 @@ header > div > a:hover{
     margin: 8px 0;  
 }
 
-/* MAIN (7sezioni)*/
+/**** MAIN (7sezioni) ****/
 
 /* Prima sezione */
+
 .flex-container-firstsection{
     display: flex;
     justify-content: space-between;
@@ -137,12 +138,11 @@ header > div > a:hover{
     font-size: 50px; 
 }
 
-
 /* Seconda sezione */
 
 .flex-container-3{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 
 .sec2-column{  
@@ -186,28 +186,26 @@ header > div > a:hover{
     min-height: 325px ;
 }
 
-.card-info > h3  {
+.card-info > h3{
     padding: 4% 3%;
 }
 
-.card-info > h5  {
+.card-info > h5{
     padding: 4% 3%;
 }
 
 .card-info > p{
     padding: 4% 3%;
-
 }
 
-.card-info > h6  {
+.card-info > h6{
     padding: 4% 3%;
     font-size: 18px;
     font-weight: lighter;
 }
 
 .card-info > ul{
-    list-style-type: none;
-    
+    list-style-type: none;  
 }
 
 li{
@@ -227,35 +225,32 @@ li > h6 {
     border: none;
     padding: 7px 17%;
     white-space: nowrap;
-    color: white; 
-    
+    color: white;    
 }
+
 .card-info > p > a {
     text-decoration: none;
     font-size: 15px;
     display: inline;
 }
+
 .card-info > hr{
     width: 30%;
-    margin: 2% 4%;
-    
-    
+    margin: 2% 4%;   
 }
 
 .fa-check{
     color: #0061ff;
-    padding-right: 4px;
-    
+    padding-right: 4px;   
 }
 
-
+/* Seconda Sezione (Enterprise) */
 .sec2-team{    
     display: flex;
     flex-direction: column;
     border: 0.5px solid rgb(122, 121, 121);
     width: 100%;
-    margin: 8% 0;
-    
+    margin: 8% 0;   
 }
 
 .sell-office{   
@@ -268,7 +263,6 @@ li > h6 {
     padding: 3% 2% ;
     border-top: 0.5px solid rgb(122, 121, 121);
     font-size: 22px;
-
 }
 
 .contact{
@@ -304,18 +298,15 @@ li > h6 {
 
 
 .sec3-row-right{
-    
-    
     width: calc((100% / 2) );
     margin: 0 1%;
-    padding: 7% 0 ;
-    
+    padding: 7% 0 ;   
 }
-
 
 #partner{
     width: 95%;
 }
+
 .sec3-row-right > h3 {
  font-size: 30px;
 }
@@ -339,15 +330,13 @@ li > h6 {
 
 /* QUARTA SEZIONE */
 
-.sec4-row{
-    
+.sec4-row{   
     width: calc((100% / 3) - 4%);
     margin: 1% auto;
 }
 
 .sec4-row > img{
-    width: 100%;
-    
+    width: 100%;   
 }
 
 .sec4-row > h3{
@@ -360,13 +349,10 @@ li > h6 {
     font-size: 20px;
 }
 
-
-
 .flex-container-4{
     display: flex;
     width: 100%;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;   
 }
 
 section.boxed-two > h2{
@@ -397,13 +383,15 @@ section.boxed-two > h2{
 .se6-column{
     background-color: #f5f5f5;
     width: calc(100% / 3);
-    max-height: 601px ;
-    min-height: 601px;
+    aspect-ratio: 1; 
 }
+
 .se6-column > img{
     display: none;
 }
+
 /* PULSANTE ATTIVO */
+
 .c1:active{
     border: 15px  inset   rgba(255, 255, 255, 0.5) ;  
 }
@@ -417,20 +405,16 @@ section.boxed-two > h2{
     border: 15px  inset rgba(255, 255, 255, 0.5) ;  
 }
 .c5:active{
-    border: 15px  inset  rgba(255, 255, 255, 0.5) ;  
-    
+    border: 15px  inset  rgba(255, 255, 255, 0.5) ;     
 }
 .c6:active{
-    border: 15px  inset  rgba(255, 255, 255, 0.5) ;  
-    
+    border: 15px  inset  rgba(255, 255, 255, 0.5) ;     
 }
 .c7:active{
-    border: 15px  inset  rgba(255, 255, 255, 0.5) ;  
-    
+    border: 15px  inset  rgba(255, 255, 255, 0.5) ;    
 }
 .c8:active{
-    border: 15px  inset  rgba(255, 255, 255, 0.5) ;  
-    
+    border: 15px  inset  rgba(255, 255, 255, 0.5) ;    
 }
 /* CAMBIO LOGO ONCLICK */
 
@@ -438,18 +422,20 @@ section.boxed-two > h2{
     display: block;
     max-width: 50%;
     height: 25%;
-}
-.no{
-    display: none;
+    scroll-margin: 80px 0 ;
 }
 
 /* FINE CAMBIO LOGO ONCLICK */
 
 .square{
     width: calc(100% / 2);
-    height: calc(100% / 2);   
+    height: calc(100% / 2); 
+    display: flex;
+    justify-content: center;
+    align-items: center;     
 }
- /* BACKGROUND SQUARE */
+
+/* BACKGROUND SQUARE */
 
 .c1{
     background-color:#a2d39b ;
@@ -486,8 +472,9 @@ section.boxed-two > h2{
 
 .square > img{
     margin: 20%;
-    max-height: 60%;
-    max-width: 60%;
+    max-height: 50%;
+    max-width: 50%;
+    filter: invert(1);  
 }
 
 .row-column{ 
@@ -505,10 +492,12 @@ section.boxed-two > h2{
     font-size: 20px;
     margin: 4%;
 }
+
 .se6-column > img{
     margin: 3%;
     padding: 5%;
 }
+
 .se6-column > hr{
     display: block;
     width: 150px;
@@ -542,15 +531,21 @@ section.boxed-two > h2{
     display: inline-block;
 }
 
- /* SETTIMA SEZIONE */
+/* SETTIMA SEZIONE */
+
+#contenitore{
+    border-bottom: 1px solid grey;  
+}
 
 .sec7{
     margin-top: 5%;
     margin-bottom: 5%;
 }
+
 #invisible{
    display: none;
 }
+
 #contenitore:hover #invisible  { 
     display: block;
 }
@@ -559,13 +554,13 @@ section.boxed-two > h2{
     margin-right: 3%;
     font-size: 25px;
 }
+
 #contenitore:hover #rotate{
     transform: rotate(180deg);
     display: inline-block;
 }
 
 #contenitore > h5{
-    border-bottom: 1px solid grey;
     font-size: 18px;
     margin: 2% 0;
     padding-bottom: 3%;
@@ -582,6 +577,7 @@ section.boxed-two > h2{
     color: whitesmoke;
     min-height:550px;
 }
+
 .f-column{
     width: calc((100% / 5) - 5%);
     margin: 3.5% 0.5%;
@@ -589,7 +585,6 @@ section.boxed-two > h2{
 
 .f-column > h6{
     margin: 8% 0;
-
 }
 
 .f-column > h6 > a{
